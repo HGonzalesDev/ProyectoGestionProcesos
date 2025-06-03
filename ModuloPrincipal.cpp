@@ -13,18 +13,18 @@ struct Nodo{
 	}
 };
 
-//Función para agregar un nodo al final de la lista
+//FunciÃ³n para agregar un nodo al final de la lista
 void agregarAlFinal (Nodo*& inicio, int valor){
 	Nodo* nuevoNodo=new Nodo(valor); //Creamos un nuevo nodo con el valor
 	
-	if (inicio == NULL){ //Si la lista está vacia, el nuevo nodo será el inicio
+	if (inicio == NULL){ //Si la lista estÃ¡ vacia, el nuevo nodo serÃ¡ el inicio
 		inicio = nuevoNodo;
 		
 	} else {
 		Nodo* temp = inicio;
 		while (temp->siguiente != NULL) {
 			temp = temp->siguiente;
-			
+			cout << temp;
 		}
 		
 	}	
@@ -42,17 +42,17 @@ void imprimirLista (Nodo* inicio) {
 }
 
 int main () {
-	Nodo* inicio=NULL; // la lista comienza vacía (NULL en vez de nullptr)
+	Nodo* inicio=NULL; // la lista comienza vacÃ­a (NULL en vez de nullptr)
 	int numeroDeElementos, valor;
-	//Pedimos al usuario cuántos elementos desea agregar a la lista
-	cout << "¿Cuántos elementos deseas agregar a la lista?";
+	//Pedimos al usuario cuÃ¡ntos elementos desea agregar a la lista
+	cout << "Â¿CuÃ¡ntos elementos deseas agregar a la lista?";
 	cin >> numeroDeElementos;
 	
 	// Ingresamos los elementos uno por uno
 	for (int i=0; i<numeroDeElementos; i++){
 		cout<< "Ingresa el valor para el nodo " << i + 1 << ": " ;
 		cin >> valor;
-		agregarAlFinal (inicio, valor); // Llamamos a la función para agregar el nodo 
+		agregarAlFinal (inicio, valor); // Llamamos a la funciÃ³n para agregar el nodo 
 	}
 	
 	//Imprimimos la lista
