@@ -24,7 +24,7 @@ void agregarAlFinal (Nodo*& inicio, int valor){
 		Nodo* temp = inicio;
 		while (temp->siguiente != NULL) {
 			temp = temp->siguiente;
-			cout << temp;
+			
 		}
 		
 	}	
