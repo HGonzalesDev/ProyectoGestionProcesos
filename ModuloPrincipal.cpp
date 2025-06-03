@@ -14,22 +14,6 @@ struct Nodo{
 };
 
 //Función para agregar un nodo al final de la lista
-void agregarAlFinal (Nodo*& inicio, int valor){
-	Nodo* nuevoNodo=new Nodo(valor); //Creamos un nuevo nodo con el valor
-	
-	if (inicio == NULL){ //Si la lista está vacia, el nuevo nodo será el inicio
-		inicio = nuevoNodo;
-		
-	} else {
-		Nodo* temp = inicio;
-		while (temp->siguiente != NULL) {
-			temp = temp->siguiente;
-			
-		}
-		
-	}	
-
-}
 
 void imprimirLista (Nodo* inicio) {
 	Nodo* temp = inicio;
