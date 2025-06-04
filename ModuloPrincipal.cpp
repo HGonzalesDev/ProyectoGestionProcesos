@@ -24,6 +24,15 @@ void imprimirLista (Nodo* inicio) {
 	}	
 	cout << endl;
 }
+void leerLista (Nodo* inicio) {
+	Nodo* temp = inicio;
+	while (temp!=NULL){//Mientras haya nodos, seguimos recorriendo
+		cout << temp -> dato << " "; // Imprimimos el dato del nodo
+		temp = temp -> siguiente;
+		
+	}	
+	cout << endl;
+}
 
 int main () {
 	Nodo* inicio=NULL; // la lista comienza vacía (NULL en vez de nullptr)
